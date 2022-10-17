@@ -20,6 +20,8 @@
 
 This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
 
+[Check the project deployment](https://me-luc.github.io/interactive-rating-landing-page/)
+
 ### The challenge
 
 Users should be able to:
