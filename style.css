@@ -131,7 +131,7 @@ button:disabled {
 	color: hsl(25, 97%, 53%);
 }
 
-@media (max-width: 500px) and (min-width: 425px) {
+@media (max-width: 500px) {
 	.square {
 		width: 80%;
 	}
