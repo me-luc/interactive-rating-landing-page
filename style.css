@@ -1,5 +1,11 @@
+body {
+	background-color: hsl(216, 12%, 8%);
+}
 button:hover {
 	cursor: pointer;
+}
+button:disabled {
+	cursor: not-allowed;
 }
 .square p {
 	font-size: 15px;
@@ -31,26 +37,27 @@ button:hover {
 	color: hsl(0, 0%, 100%);
 }
 
+#hide {
+	display: none;
+}
 .hide {
 	display: none;
 }
-
-.square,
-.square2 {
+.square {
 	background-color: brown;
 	width: 390px;
 	height: 390px;
 	padding: 30px;
 	box-sizing: border-box;
 	border-radius: 30px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
 
 	background-image: linear-gradient(135deg, #1e252f, #171e28);
 }
-.square2 {
+.square1-elements {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .buttons {
@@ -95,9 +102,37 @@ button:hover {
 	color: hsl(25, 97%, 53%);
 }
 
-.final-elements {
+.square2-elements {
 	text-align: center;
+
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.final-elements img {
+.square2-elements img {
 	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.text {
+	width: 200px;
+	height: 35px;
+	border-radius: 100px;
+	background-color: hsl(213, 19%, 18%);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text p,
+.star {
+	color: hsl(25, 97%, 53%);
+}
+
+@media (max-width: 500px) and (min-width: 425px) {
+	.square {
+		width: 80%;
+	}
 }
